@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operadores Lógicos</title>
+</head>
+<body>
+    <script>
+        const aluno = 'carlin'
+        const nota1 = 5
+        const nota2 = 7
+        const nota3 = 8
+        const nota4 = 9
+
+        const faltas = 5
+        const media= (nota1+nota2+nota3+nota4)/4
+
+        if(media>=7 && faltas<=4){
+            alert("aprovado")
+        }
+        else if(media<=7 && media>5 &&faltas<=4){
+            alert("recuperação")
+        }
+        else if(media<=5 && faltas<=4){
+            alert("Reprovado")
+        }
+        else{
+            alert("Jubilado")
+        }
+// //          V/F         V/F
+//         if(media<7 ||(OU) faltas>4){
+//             alert("Aluno REPROVADO")
+//             //código se verdadeiro
+//         }else{
+//             alert("Aluno APROVADO")
+//         }
+
+
+//          V/F         V/F
+//         if(media<7 && faltas>4){
+//             alert("Aluno REPROVADO")
+//              //código se verdadeiro
+//         }else{
+//             alert("Aluno APROVADO")
+//         }
+
+
+//          V/F         V/F
+        //  if(!(media<7) && !(faltas>4)){
+        //      alert("Aluno aprovado")
+        //      //código se verdadeiro
+        //  }else{
+        //      alert("Aluno reprovado")
+        //  }
+        
+    </script>
+</body>
+</html>

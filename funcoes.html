@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+
+        function exibeInfoEstudante(nome, Nota){
+            const infor =`
+            ======================================
+            Estudante: ${nome}
+            Sua nota ${Nota}
+            ======================================
+            `
+            return infor
+        }
+
+        const new_info = exibeInfoEstudante('carlos', 3.5)
+        console.log(new_info)
+
+
+
+        function media(nota1,nota2,nota3,nota4){
+            return (nota1+nota2+nota3+nota4)/4
+        }
+        const new_media = media(5,5,6,7)
+        console.log(`a nova media dessa lenda é ${new_media}`)
+
+    </script>
+</body>
+</html>
