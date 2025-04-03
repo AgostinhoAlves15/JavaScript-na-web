@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        const negativoOuPositivo = (num) => {
+            if(num>0){
+                console.log("o numero dado é positivo")
+            }
+            else if(num<0){
+                console.log("o numero dado é negativo")
+            }
+            else{
+                console.log("o numero é 0")
+            }
+        }
+    
+
+        const parOuImpar = (num) => {
+            if(num % 2 == 1)
+                console.log("Impar")
+            else{
+                console.log("Par")
+            }
+        }
+
+        //ternario
+        const parOuImpar2 = (num) => num % 2 == 1? "Impar": "par"
+
+        negativoOuPositivo(-2)
+        parOuImpar(3)
+        console.log(parOuImpar2(0))
+    </script>
+</body>
+</html>

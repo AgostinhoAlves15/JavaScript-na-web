@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const calc = function (n1,n2,operacao){
+            switch(operacao){
+                case '+':
+                    return n1+n2
+                case '-':
+                    return n1-n2
+                case '*':
+                    return n1*n2
+                case '/':
+                    return n1/n2
+                default:
+                    return 'o valor dado não é valido'
+            }
+        }
+        console.log(calc (2,2,'+'))
+
+
+
+
+        const temperatura = function(temp_fah){
+            const Temp_cel = 5/9 * (temp_fah - 32)
+            return Temp_cel.toFixed(2)
+        }
+        console.log(temperatura(90))
+    </script>
+</body>
+</html>
