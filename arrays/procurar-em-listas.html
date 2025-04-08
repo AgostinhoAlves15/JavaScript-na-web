@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Procurar em Listas</title>
+</head>
+<body>
+    <script>
+        // const pets=[
+        //     "Cachorro","Gato","Hamster"]
+            
+        //     console.log(pets.includes("Gato"))
+        //      true ou false
+
+        //     console.log(pets.indexOf("Gato")) // -> 1
+
+        const alunos = ['joão','juliana','caio','ana']
+        const medias = [10,8,7.5,9] 
+
+        const AlunosMedia = [alunos,medias]
+
+        const ExibeNomeNota = function(nome){
+            if(AlunosMedia[0].includes(nome)){
+                const indexAluno = AlunosMedia[0].indexOf(nome)
+                const nomeAluno = AlunosMedia[0][indexAluno]
+                const mediaAluno = AlunosMedia[1][indexAluno]
+                console.log(`o estudante ${nomeAluno} tem a media de ${mediaAluno}`)
+            }else{
+                console.log('o estudante não existe :/')
+            }
+        } 
+        const nome = prompt("digite o nome de um estudante: ")
+        ExibeNomeNota(nome)
+    </script>
+</body>
+</html>

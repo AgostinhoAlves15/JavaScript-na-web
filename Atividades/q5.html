@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const programa = (n1,n2,n3,n4) =>{
+            const media = (n1+n2+n3+n4)/4
+            switch(true){
+                case media>=7:
+                    return 'Aluno Aprovado'
+                case media<7 && media>=5:
+                    return 'Aluno de Recuperação'
+                case media<5:
+                    return 'Aluno Reprovado'
+                default:
+                    return 'invalido'
+            }
+        }
+        const nm1 = parseFloat(prompt("digite um numero"))
+        const nm2 = parseFloat(prompt("digite um numero"))
+        const nm3 = parseFloat(prompt("digite um numero"))
+        const nm4 = parseFloat(prompt("digite um numero"))
+
+        console.log(programa(nm1,nm2,nm3,nm4))
+    </script>
+</body>
+</html>

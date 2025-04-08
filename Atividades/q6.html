@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const programa = () =>{
+            const frutas=['tomate','abacate','morango','melancia']
+            const num = parseFloat(prompt(`escolha um numero para fazer tais funções:
+            lista de fruta: ${frutas}
+            -----------------------------------
+            1:adicionar
+            2:remover
+            3:exibir primeiras frutas
+            4:exibir ultimas frutas
+            5:adicionar uma fruta na posição n
+            -----------------------------------`))
+            switch(num){
+                case 1:
+                const n1 = prompt("digite qual fruta vôce quer colocar no final")
+                    frutas.push(n1)
+                    console.log(frutas)
+                    break
+                case 2:
+                const n2 = parseFloat(prompt("Remova o ultimo elemento"))
+                    frutas.pop(n2)
+                    console.log(frutas)
+                    break
+                case 3:
+                    const n3 = parseFloat(prompt(`digite quantas primeiras frutas deseja ver de ${frutas}`))
+                    const primeirasFrutas = frutas.slice(0,n3)
+                    console.log(primeirasFrutas)
+                    break
+                case 4:
+                    const n4 = parseFloat(prompt("digite quais ultimos frutas voce deseja ver "))
+                    const  ultimasFrutas = frutas.slice(-n4)
+                    console.log(ultimasFrutas)
+                    break
+                case 5:
+                    const add_fruta =prompt("digite qual fruta você adicionar em uma certa posição")
+                    const posição = parseFloat(prompt("digite a posição que para adicionar a fruta"))
+                    frutas.splice(posição, 0 ,add_fruta)
+                    console.log(frutas)
+                    break
+                default:
+                    console.log('Opção inválida')
+            }
+        }
+        programa()
+    </script>
+</body>
+</html>

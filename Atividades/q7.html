@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const addnotas = () =>{
+            const solicitar1 = parseFloat(prompt("digite uma nota"))
+            const solicitar2 = parseFloat(prompt("digite uma nota"))
+            return notas = [solicitar1,solicitar2]
+        }
+        const lista1 = addnotas()
+        const lista2 = addnotas()
+
+        const listaFinal = lista1.concat(lista2)
+        console.log("Lista 1:", lista1);
+        console.log("Lista 2:", lista2);
+        console.log("Lista Final:", listaFinal);
+    </script>
+</body>
+</html>
