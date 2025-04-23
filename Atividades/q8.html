@@ -7,7 +7,26 @@
 </head>
 <body>
     <script>
-        
+        const alunos = [];
+        const notas = [];
+
+        for (let i = 0; i < 4; i++) {
+        const nome = prompt(`Digite o nome do ${i + 1}º aluno:`);
+        const nota = parseFloat(prompt(`Digite a nota do ${i + 1}º aluno:`));
+        alunos.push(nome);
+        notas.push(nota);
+        }
+
+        const lista = [alunos, notas];
+
+        const nomeBusca = prompt("Digite o nome do aluno que deseja buscar:");
+        const indice = lista[0].indexOf(nomeBusca);
+
+        if (indice !== -1) {
+        alert(`Aluno: ${lista[0][indice]} \nNota: ${lista[1][indice]}`);
+        } else {
+        alert("Aluno Inexistente");
+        }
     </script>
 </body>
 </html>

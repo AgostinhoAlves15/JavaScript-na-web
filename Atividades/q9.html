@@ -7,7 +7,12 @@
 </head>
 <body>
     <script>
-        
+        const valorProduto = parseFloat(prompt("Digite o valor do produto:"));
+        const percentualDesconto = parseFloat(prompt("Digite o percentual de desconto (%):"));
+        const valorDesconto = (valorProduto * percentualDesconto) / 100;
+        const valorFinal = valorProduto - valorDesconto;
+        alert("Valor final com desconto: R$" + valorFinal.toFixed(2));
+
     </script>
 </body>
 </html>

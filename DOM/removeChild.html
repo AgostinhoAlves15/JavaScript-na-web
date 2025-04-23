@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+    <ul id="lista">
+        <li id="remover">item que será removido</li>
+        <li id="item1"></li>
+        <li id="item2"></li>
+        <li id="item3"></li>
+    </ul>
+    <script>
+        //const lista = document.getElementById("lista");
+        //const item = document.getElementById("remover");
+
+        //lista.removeChild(item);
+
+
+        //ATV
+        const lista = document.getElementById("lista");
+        const item = document.querySelectorAll("li");
+
+        item.forEach(sla => lista.removeChild(sla))
+
+    </script>
+</body>
+</html>
