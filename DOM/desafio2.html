@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contador de Clique</title>
+</head>
+<body>
+    <h1>Desafio: Contador de Clique</h1>
+
+    <button id="btn">Clique aqui</button>
+    <p id="numero">0</p>
+
+    <script>
+        let num = 0;
+        const button = document.getElementById("btn")
+        const numero = document.getElementById("numero")
+
+        button.addEventListener("click", () => {
+            num += 1;
+            numero.innerHTML = num
+        })
+    </script>
+</body>
+</html>
+
